@@ -11,7 +11,7 @@ RUN mkdir -p /etc/supervisor/conf.d
 # 复制 Supervisor 配置文件到容器中
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
-COPY pulsar-io-canal-2.3.2.nar ./connectors/
+COPY pulsar-io-canal-2.3.1.nar ./connectors/
 COPY canal-mysql-source-config.yaml ./conf/
 COPY python_consumer.py .
 COPY start_pulsar.sh .
